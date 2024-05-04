@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerRoyale.Kitchen.Infras
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerRoyale.Kitchen.IOC", "BurgerRoyale.Kitchen.IOC\BurgerRoyale.Kitchen.IOC.csproj", "{CD06D68A-BD7A-4BDC-9D93-C79D2D7BDD47}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerRoyale.Kitchen.BackgroundService", "BurgerRoyale.Kitchen.BackgroundService\BurgerRoyale.Kitchen.BackgroundService.csproj", "{E7A704A1-81E2-4B3E-A8F0-84B7AFB19691}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{CD06D68A-BD7A-4BDC-9D93-C79D2D7BDD47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD06D68A-BD7A-4BDC-9D93-C79D2D7BDD47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD06D68A-BD7A-4BDC-9D93-C79D2D7BDD47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7A704A1-81E2-4B3E-A8F0-84B7AFB19691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7A704A1-81E2-4B3E-A8F0-84B7AFB19691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7A704A1-81E2-4B3E-A8F0-84B7AFB19691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7A704A1-81E2-4B3E-A8F0-84B7AFB19691}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{8F59A065-104A-495D-8155-7F9CB126CA50} = {D8EB6E0A-DDAE-433F-9F57-B00BF2438818}
 		{C54343FB-5E6B-415A-B777-98577CDBF260} = {D8EB6E0A-DDAE-433F-9F57-B00BF2438818}
 		{CD06D68A-BD7A-4BDC-9D93-C79D2D7BDD47} = {D8EB6E0A-DDAE-433F-9F57-B00BF2438818}
+		{E7A704A1-81E2-4B3E-A8F0-84B7AFB19691} = {D8EB6E0A-DDAE-433F-9F57-B00BF2438818}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {569C0B17-A09F-4F5D-A413-994B9CEE877A}
