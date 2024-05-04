@@ -1,0 +1,6 @@
+@BurgerRoyale.Kitchen_HostAddress = http://localhost:5227
+
+GET {{BurgerRoyale.Kitchen_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
