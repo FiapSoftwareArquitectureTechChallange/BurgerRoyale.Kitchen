@@ -4,5 +4,5 @@ public interface IMessageQueue
 {
     string OrderPreparationRequestQueue();
 
-    string OrderPreparationFeedbackQueue();
+    string OrderPreparedQueue();
 }
