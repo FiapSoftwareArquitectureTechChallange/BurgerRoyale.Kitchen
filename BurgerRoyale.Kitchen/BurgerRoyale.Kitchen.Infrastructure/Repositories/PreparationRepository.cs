@@ -19,6 +19,13 @@ public class PreparationRepository(PreparationContext context) : IPreparationRep
             .ToListAsync();
     }
 
+    public async Task<Order?> GetById(Guid id)
+    {
+        return await context.Orders
+            .Find(o => o.Id == id)
+            .FirstOrDefaultAsync();
+    }
+
     public async Task Update(Order order)
     {
         var filter = Builders<Order>.Filter.Eq(e => e.Id, order.Id);

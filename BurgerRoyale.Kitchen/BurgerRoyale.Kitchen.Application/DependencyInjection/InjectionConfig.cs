@@ -1,4 +1,6 @@
-﻿using BurgerRoyale.Kitchen.Application.Contracts.UseCases;
+﻿using BurgerRoyale.Kitchen.Application.Contracts.Mapper;
+using BurgerRoyale.Kitchen.Application.Contracts.UseCases;
+using BurgerRoyale.Kitchen.Application.Mapper;
 using BurgerRoyale.Kitchen.Application.UseCases;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,18 +13,19 @@ public static class InjectionConfig
         #region UseCases
 
         services.AddScoped<IRequestPreparation, RequestPreparation>();
+        services.AddScoped<IGetOrders, GetOrders>();
 
         #endregion
 
         #region Mappers
 
-        
+        services.AddScoped<IOrderMapper, OrderMapper>();
 
         #endregion
 
         #region Validators
 
-        
+
 
         #endregion
     }

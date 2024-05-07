@@ -20,20 +20,14 @@ public class Order : Notifiable<Notification>, IEntityBase
         Status = orderStatus;
     }
 
-    public Guid ProductId { get; set; }
     public IEnumerable<OrderProduct> OrderProducts { get; set; }
 
     public Guid Id { get; private set; }
 
     public OrderStatus Status { get; private set; }
 
-    public void StartPreparing()
+    public void UpdateStatus(OrderStatus status)
     {
-        Status = OrderStatus.Preparing;
-    }
-
-    public void EndPreparation()
-    {
-        Status = OrderStatus.Ready;
+        Status = status;
     }
 }

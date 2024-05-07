@@ -8,5 +8,7 @@ public interface IPreparationRepository
 
     Task<IEnumerable<Order>> GetAll();
 
+    Task<Order> GetById(Guid id);
+
     Task Update(Order order);
 }
