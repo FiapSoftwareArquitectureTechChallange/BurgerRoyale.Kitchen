@@ -3,21 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerRoyale.Kitchen.API", "BurgerRoyale.Kitchen\BurgerRoyale.Kitchen.API.csproj", "{FF6FC850-1F67-4C1D-A241-1817D26FC5D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurgerRoyale.Kitchen.API", "BurgerRoyale.Kitchen\BurgerRoyale.Kitchen.API.csproj", "{FF6FC850-1F67-4C1D-A241-1817D26FC5D2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D8EB6E0A-DDAE-433F-9F57-B00BF2438818}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0C494DE8-43E0-460F-AD4A-149EE5ADC998}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerRoyale.Kitchen.Application", "BurgerRoyale.Kitchen.Application\BurgerRoyale.Kitchen.Application.csproj", "{BCD29F03-096E-4FEC-B9AE-B990880029A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurgerRoyale.Kitchen.Application", "BurgerRoyale.Kitchen.Application\BurgerRoyale.Kitchen.Application.csproj", "{BCD29F03-096E-4FEC-B9AE-B990880029A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerRoyale.Kitchen.Domain", "BurgerRoyale.Kitchen.Domain\BurgerRoyale.Kitchen.Domain.csproj", "{8F59A065-104A-495D-8155-7F9CB126CA50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurgerRoyale.Kitchen.Domain", "BurgerRoyale.Kitchen.Domain\BurgerRoyale.Kitchen.Domain.csproj", "{8F59A065-104A-495D-8155-7F9CB126CA50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerRoyale.Kitchen.Infrastructure", "BurgerRoyale.Kitchen.Infrastructure\BurgerRoyale.Kitchen.Infrastructure.csproj", "{C54343FB-5E6B-415A-B777-98577CDBF260}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurgerRoyale.Kitchen.Infrastructure", "BurgerRoyale.Kitchen.Infrastructure\BurgerRoyale.Kitchen.Infrastructure.csproj", "{C54343FB-5E6B-415A-B777-98577CDBF260}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerRoyale.Kitchen.IOC", "BurgerRoyale.Kitchen.IOC\BurgerRoyale.Kitchen.IOC.csproj", "{CD06D68A-BD7A-4BDC-9D93-C79D2D7BDD47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurgerRoyale.Kitchen.IOC", "BurgerRoyale.Kitchen.IOC\BurgerRoyale.Kitchen.IOC.csproj", "{CD06D68A-BD7A-4BDC-9D93-C79D2D7BDD47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerRoyale.Kitchen.BackgroundService", "BurgerRoyale.Kitchen.BackgroundService\BurgerRoyale.Kitchen.BackgroundService.csproj", "{E7A704A1-81E2-4B3E-A8F0-84B7AFB19691}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurgerRoyale.Kitchen.BackgroundService", "BurgerRoyale.Kitchen.BackgroundService\BurgerRoyale.Kitchen.BackgroundService.csproj", "{E7A704A1-81E2-4B3E-A8F0-84B7AFB19691}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerRoyale.Kitchen.Application.Tests", "BurgerRoyale.Kitchen.BehaviorTests\BurgerRoyale.Kitchen.Application.Tests.csproj", "{9DE15A0F-3EDD-4888-B198-4C65AAF5EC74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerRoyale.Kitchen.Domain.Tests", "BurgerRoyale.Kitchen.Domain.Tests\BurgerRoyale.Kitchen.Domain.Tests.csproj", "{FDB7AE5C-9D4D-4EEF-A92C-EE17CA77635F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +53,14 @@ Global
 		{E7A704A1-81E2-4B3E-A8F0-84B7AFB19691}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7A704A1-81E2-4B3E-A8F0-84B7AFB19691}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7A704A1-81E2-4B3E-A8F0-84B7AFB19691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DE15A0F-3EDD-4888-B198-4C65AAF5EC74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DE15A0F-3EDD-4888-B198-4C65AAF5EC74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DE15A0F-3EDD-4888-B198-4C65AAF5EC74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DE15A0F-3EDD-4888-B198-4C65AAF5EC74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDB7AE5C-9D4D-4EEF-A92C-EE17CA77635F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDB7AE5C-9D4D-4EEF-A92C-EE17CA77635F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB7AE5C-9D4D-4EEF-A92C-EE17CA77635F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDB7AE5C-9D4D-4EEF-A92C-EE17CA77635F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +72,8 @@ Global
 		{C54343FB-5E6B-415A-B777-98577CDBF260} = {D8EB6E0A-DDAE-433F-9F57-B00BF2438818}
 		{CD06D68A-BD7A-4BDC-9D93-C79D2D7BDD47} = {D8EB6E0A-DDAE-433F-9F57-B00BF2438818}
 		{E7A704A1-81E2-4B3E-A8F0-84B7AFB19691} = {D8EB6E0A-DDAE-433F-9F57-B00BF2438818}
+		{9DE15A0F-3EDD-4888-B198-4C65AAF5EC74} = {0C494DE8-43E0-460F-AD4A-149EE5ADC998}
+		{FDB7AE5C-9D4D-4EEF-A92C-EE17CA77635F} = {0C494DE8-43E0-460F-AD4A-149EE5ADC998}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {569C0B17-A09F-4F5D-A413-994B9CEE877A}
