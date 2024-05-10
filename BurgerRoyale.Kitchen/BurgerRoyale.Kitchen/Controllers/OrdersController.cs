@@ -14,7 +14,7 @@ public class OrdersController(IGetOrders service) : Controller
     [SwaggerOperation(
          Summary = "Get all orders",
          Description = "Get all orders.")]
-    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(OrderResponse), StatusCodes.Status200OK)]
     [ProducesDefaultResponseType]
     public async Task<ActionResult> GetOrders()
     {

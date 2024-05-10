@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurgerRoyale.Kitchen.Domain
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurgerRoyale.Kitchen.Application.Tests", "BurgerRoyale.Kitchen.Application.Tests\BurgerRoyale.Kitchen.Application.Tests.csproj", "{AFA2BF9A-0B03-40DB-AB86-39B67288AA61}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerRoyale.Kitchen.BehaviorTests", "BurgerRoyale.Kitchen.BehaviorTests\BurgerRoyale.Kitchen.BehaviorTests.csproj", "{0F58AB87-0CE6-4235-B73E-F436C9255A53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{AFA2BF9A-0B03-40DB-AB86-39B67288AA61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFA2BF9A-0B03-40DB-AB86-39B67288AA61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFA2BF9A-0B03-40DB-AB86-39B67288AA61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F58AB87-0CE6-4235-B73E-F436C9255A53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F58AB87-0CE6-4235-B73E-F436C9255A53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F58AB87-0CE6-4235-B73E-F436C9255A53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F58AB87-0CE6-4235-B73E-F436C9255A53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +80,7 @@ Global
 		{E7A704A1-81E2-4B3E-A8F0-84B7AFB19691} = {D8EB6E0A-DDAE-433F-9F57-B00BF2438818}
 		{FDB7AE5C-9D4D-4EEF-A92C-EE17CA77635F} = {0C494DE8-43E0-460F-AD4A-149EE5ADC998}
 		{AFA2BF9A-0B03-40DB-AB86-39B67288AA61} = {0C494DE8-43E0-460F-AD4A-149EE5ADC998}
+		{0F58AB87-0CE6-4235-B73E-F436C9255A53} = {0C494DE8-43E0-460F-AD4A-149EE5ADC998}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {569C0B17-A09F-4F5D-A413-994B9CEE877A}
