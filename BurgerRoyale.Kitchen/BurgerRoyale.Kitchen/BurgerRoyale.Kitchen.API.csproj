@@ -15,6 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <InternalsVisibleTo Include="BurgerRoyale.Kitchen.BehaviorTests" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BurgerRoyale.Kitchen.Application\BurgerRoyale.Kitchen.Application.csproj" />
     <ProjectReference Include="..\BurgerRoyale.Kitchen.Domain\BurgerRoyale.Kitchen.Domain.csproj" />
     <ProjectReference Include="..\BurgerRoyale.Kitchen.IOC\BurgerRoyale.Kitchen.IOC.csproj" />
