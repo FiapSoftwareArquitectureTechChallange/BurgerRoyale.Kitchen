@@ -1,9 +1,7 @@
 ﻿using BurgerRoyale.Kitchen.Application.Models;
 using BurgerRoyale.Kitchen.Domain.Contracts.IntegrationServices;
 using BurgerRoyale.Kitchen.Domain.Contracts.Queues;
-using BurgerRoyale.Kitchen.Infrastructure.QueueConfiguration;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace BurgerRoyale.Kitchen.API.Controllers;

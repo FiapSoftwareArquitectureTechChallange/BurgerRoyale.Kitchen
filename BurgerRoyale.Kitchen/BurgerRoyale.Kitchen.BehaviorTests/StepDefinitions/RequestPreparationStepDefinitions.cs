@@ -1,23 +1,44 @@
-﻿namespace BurgerRoyale.Kitchen.BehaviorTests.StepDefinitions;
+namespace BurgerRoyale.Kitchen.BehaviorTests.StepDefinitions;
 
 [Binding]
 public class RequestPreparationStepDefinitions(ScenarioContext context, KitchenClient client)
 {
-    [Given(@"An order arrives in the system")]
-    public void GivenAnOrderArrivesInTheSystem()
-    {
-    }
+	[Given(@"An order arrives in the system")]
+	public void AnOrderArrivesInTheSystem()
+	{
+		var products = new List<OrderProduct>() 
+		{
+			new OrderProduct()
+			{
+				ProductId = Guid.NewGuid(),
+				ProductName = "Premium Burger",
+				Quantity = 10
+			}
+		};
 
-    [When(@"User places an order")]
-    public async Task WhenUserPlacesAnOrder()
-    {
-        var response = await client.Get_ordersAsync();
+		RequestPreparationRequest request = new RequestPreparationRequest()
+		{
+			OrderId = Guid.NewGuid(),
+			OrderStatus = OrderStatus._0,
+			Products = products
+		};
+		context["Order"] = request;
+	}
 
-        context.Set(response);
-    }
+	[When(@"User places an order")]
+	public async Task WhenUserPlacesAnOrder()
+	{
+		var prepRequest = context.Get<RequestPreparationRequest>("Order");
 
-    [Then(@"Create order in the database")]
-    public void ThenCreateOrderInTheDatabase()
-    {
-    }
+		var response = await client.RequestPreparationAsync(prepRequest);
+
+		context.Set(response);
+	}
+
+	[Then(@"Create order in the database")]
+	public void ThenCreateOrderInTheDatabase()
+	{
+		var orders = client.Get_ordersAsync();
+		orders.Should().NotBeNull();
+	}
 }

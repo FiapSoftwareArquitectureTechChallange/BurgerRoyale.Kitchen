@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurgerRoyale.Kitchen.Domain
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurgerRoyale.Kitchen.Application.Tests", "BurgerRoyale.Kitchen.Application.Tests\BurgerRoyale.Kitchen.Application.Tests.csproj", "{AFA2BF9A-0B03-40DB-AB86-39B67288AA61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurgerRoyale.Kitchen.BehaviorTests", "BurgerRoyale.Kitchen.BehaviorTests\BurgerRoyale.Kitchen.BehaviorTests.csproj", "{0F58AB87-0CE6-4235-B73E-F436C9255A53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurgerRoyale.Kitchen.BehaviorTests", "BurgerRoyale.Kitchen.BehaviorTests\BurgerRoyale.Kitchen.BehaviorTests.csproj", "{0F58AB87-0CE6-4235-B73E-F436C9255A53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
