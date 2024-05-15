@@ -126,8 +126,8 @@ jobs:
         run: |
           dotnet-sonarscanner begin /k:"BurgerRoyale.Kitchen" /o:"3soat-burger-royale" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.vscoveragexml.reportsPaths='coverage-application.xml,coverage-domain.xml' /d:sonar.exclusions=**/Program.cs
           dotnet build --configuration Release
-          dotnet-coverage collect 'dotnet test .\tests\BurgerRoyale.Kitchen.Application.Tests\BurgerRoyale.Kitchen.Application.Tests.csproj' -f xml -o 'coverage-application.xml'
-          dotnet-coverage collect 'dotnet test .\tests\BurgerRoyale.Kitchen.Domain.Tests\BurgerRoyale.Kitchen.Domain.Tests.csproj' -f xml -o 'coverage-domain.xml'
+          dotnet-coverage collect 'dotnet test .\BurgerRoyale.Kitchen\BurgerRoyale.Kitchen.Application.Tests\BurgerRoyale.Kitchen.Application.Tests.csproj' -f xml -o 'coverage-application.xml'
+          dotnet-coverage collect 'dotnet test .\BurgerRoyale.Kitchen\BurgerRoyale.Kitchen.Domain.Tests\BurgerRoyale.Kitchen.Domain.Tests.csproj' -f xml -o 'coverage-domain.xml'
           dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
         
   publishImage:
