@@ -33,10 +33,14 @@ jobs:
         dotnet-version: 8.0.x
       
     - name: Restore dependencies
-      run: dotnet restore
+      run: |
+        cd BurgerRoyale.Kitchen
+        dotnet restore
 
     - name: Build
-      run: dotnet build --no-restore
+      run: |
+        cd BurgerRoyale.Kitchen
+        dotnet build --no-restore
    
   tests:
    name: Unit Tests
@@ -49,13 +53,13 @@ jobs:
       
     - name: Domain Tests
       run: |
-        cd tests
+        cd BurgerRoyale.Kitchen
         cd BurgerRoyale.Kitchen.Domain.Tests
         dotnet test
       
     - name: Application Tests
       run: |
-        cd tests
+        cd BurgerRoyale.Kitchen
         cd BurgerRoyale.Kitchen.Application.Tests
         dotnet test
 
@@ -70,8 +74,8 @@ jobs:
 
     - name: App Settings Variable Substitution        
       run: |
-        cd src
-        cd BurgerRoyale.Kitchen.API
+        cd BurgerRoyale.Kitchen
+        cd BurgerRoyale.Kitchen
         sed -i 's|${ACCESS_KEY}|'"$ACCESS_KEY"'|g' appsettings.json
         sed -i 's|${SECRET_KEY}|'"$SECRET_KEY"'|g' appsettings.json
         sed -i 's|${SESSION_TOKEN}|'"$SESSION_TOKEN"'|g' appsettings.json
