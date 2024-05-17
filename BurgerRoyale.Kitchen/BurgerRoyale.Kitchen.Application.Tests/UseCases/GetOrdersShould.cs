@@ -162,7 +162,7 @@ internal class GetOrdersShould
 
         #region Act(When)
 
-        OrderResponse response = await getOrders.UpdateOrderAsync(order.Id, OrderStatus.Preparing);
+        OrderResponse response = await getOrders.UpdateOrderAsync(order.Id, OrderStatus.Ready);
 
         #endregion
 
@@ -170,7 +170,7 @@ internal class GetOrdersShould
 
         Assert.That(response, Is.Not.Null);
 
-        Assert.That(order.Status, Is.EqualTo(OrderStatus.Preparing));
+        Assert.That(order.Status, Is.EqualTo(OrderStatus.Ready));
 
         messageServiceMock.Verify(m => m.SendMessageAsync(It.IsAny<string>(), It.IsAny<RequestPreparationResponse>()), Times.Once);
 

@@ -125,10 +125,13 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           cd BurgerRoyale.Kitchen
-          dotnet-sonarscanner begin /k:"BurgerRoyale.Kitchen" /o:"3soat-burger-royale" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.vscoveragexml.reportsPaths='coverage-application.xml,coverage-domain.xml' /d:sonar.exclusions=**/Program.cs
+          dotnet-sonarscanner begin /k:"BurgerRoyale.Kitchen" /o:"3soat-burger-royale" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.vscoveragexml.reportsPaths='coverage-application.xml,coverage-domain.xml,coverage-api.xml,coverage-backgroundservice.xml,coverage-infrastructure.xml' /d:sonar.exclusions=**/Program.cs
           dotnet build --configuration Release
+          dotnet-coverage collect 'dotnet test .\BurgerRoyale.Kitchen.API.Tests\BurgerRoyale.Kitchen.API.Tests.csproj' -f xml -o 'coverage-api.xml'
           dotnet-coverage collect 'dotnet test .\BurgerRoyale.Kitchen.Application.Tests\BurgerRoyale.Kitchen.Application.Tests.csproj' -f xml -o 'coverage-application.xml'
+          dotnet-coverage collect 'dotnet test .\BurgerRoyale.Kitchen.BackgroundService.Tests\BurgerRoyale.Kitchen.BackgroundService.Tests.csproj' -f xml -o 'coverage-backgroundservice.xml'
           dotnet-coverage collect 'dotnet test .\BurgerRoyale.Kitchen.Domain.Tests\BurgerRoyale.Kitchen.Domain.Tests.csproj' -f xml -o 'coverage-domain.xml'
+          dotnet-coverage collect 'dotnet test .\BurgerRoyale.Kitchen.Infrastructure.Tests\BurgerRoyale.Kitchen.Infrastructure.Tests.csproj' -f xml -o 'coverage-infrastructure.xml'
           dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
         
   publishImage:

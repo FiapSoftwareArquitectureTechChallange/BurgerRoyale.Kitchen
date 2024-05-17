@@ -9,9 +9,11 @@ using BurgerRoyale.Kitchen.Infrastructure.Database.Context;
 using BurgerRoyale.Kitchen.Infrastructure.QueueConfiguration;
 using BurgerRoyale.Kitchen.Infrastructure.Repositories;
 using Microsoft.Extensions.DependencyInjection;
+using System.Diagnostics.CodeAnalysis;
 
 namespace BurgerRoyale.Kitchen.Infrastructure.DependencyInjection;
 
+[ExcludeFromCodeCoverage]
 public static class InjectionConfig
 {
     public static void AddInfrastructureDependencies(this IServiceCollection services)
