@@ -1,8 +1,10 @@
 ﻿using BurgerRoyale.Kitchen.Domain.DatabaseConfiguration;
 using Microsoft.Extensions.Configuration;
+using System.Diagnostics.CodeAnalysis;
 
 namespace BurgerRoyale.Kitchen.Infrastructure.Database.Config;
 
+[ExcludeFromCodeCoverage]
 public class MongoDBSettings(IConfiguration configuration) : IDatabaseConfiguration
 {
     public string CollectionName()

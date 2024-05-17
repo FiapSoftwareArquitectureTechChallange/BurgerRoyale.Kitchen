@@ -1,5 +1,4 @@
-﻿using BurgerRoyale.Kitchen.API.Extensions;
-using BurgerRoyale.Kitchen.Application.Contracts.UseCases;
+﻿using BurgerRoyale.Kitchen.Application.Contracts.UseCases;
 using BurgerRoyale.Kitchen.Application.Models;
 using BurgerRoyale.Kitchen.Domain.Enums;
 using Microsoft.AspNetCore.Mvc;
