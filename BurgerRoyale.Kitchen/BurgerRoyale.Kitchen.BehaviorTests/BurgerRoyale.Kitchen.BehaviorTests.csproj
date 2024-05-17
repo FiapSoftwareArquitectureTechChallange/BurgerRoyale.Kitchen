@@ -32,7 +32,7 @@
 
   <ItemGroup>
     <OpenApiReference Include="OpenAPIs\swagger.json" CodeGenerator="NSwagCSharp" ClassName="KitchenClient">
-      <SourceUri>https://localhost:44368/swagger/v1/swagger.json</SourceUri>
+      <SourceUri>https://localhost:7013/swagger/v1/swagger.json</SourceUri>
     </OpenApiReference>
   </ItemGroup>
 

@@ -8,16 +8,9 @@ using System.Text.Json;
 
 namespace BurgerRoyale.Kitchen.Infrastructure.BackgroundMessage;
 
-public class AWSSQSService : IMessageService
+public class AWSSQSService(IAmazonSQS _amazonSQSClient) : IMessageService
 {
     private readonly ICredentialConfiguration _credentialConfiguration;
-    private readonly IAmazonSQS _amazonSQSClient;
-
-    public AWSSQSService(ICredentialConfiguration credentialConfiguration)
-    {
-        _credentialConfiguration = credentialConfiguration;
-        _amazonSQSClient = CreateClient();
-    }
 
     public async Task<string> SendMessageAsync(string queueName, string message)
     {
