@@ -8,8 +8,8 @@ on:
     branches: [ "main", "develop"]
   
 env:
-  EKS_CLUSTER_NAME: burger-royalekitchen-eks-test
-  ECR_REPOSITORY: burgerroyalekitchen-ecr
+  EKS_CLUSTER_NAME: burger-cluster-eks
+  ECR_REPOSITORY: burgerroyale-kitchen-ecr
   AWS_REGION: us-east-1
   ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
   SECRET_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
