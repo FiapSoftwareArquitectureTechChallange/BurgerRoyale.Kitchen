@@ -4,7 +4,6 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace BurgerRoyale.Kitchen.BackgroundService.DependencyInjection;
 
-[ExcludeFromCodeCoverage]
 public static class InjectionConfig
 {
 	public static void AddBackgroundServiceDependencies(this IServiceCollection services)

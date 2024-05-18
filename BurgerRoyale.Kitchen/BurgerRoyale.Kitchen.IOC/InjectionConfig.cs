@@ -8,7 +8,6 @@ using System.Diagnostics.CodeAnalysis;
 namespace BurgerRoyale.Kitchen.IOC;
 
 
-[ExcludeFromCodeCoverage]
 public static class InjectionConfig
 {
     public static void AddDependencies(this IServiceCollection services, IConfiguration configuration)
