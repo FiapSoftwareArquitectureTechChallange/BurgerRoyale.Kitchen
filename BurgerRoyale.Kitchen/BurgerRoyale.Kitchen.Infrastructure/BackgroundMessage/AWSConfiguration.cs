@@ -1,8 +1,10 @@
 ﻿using BurgerRoyale.Kitchen.Domain.CredentialsConfiguration;
 using Microsoft.Extensions.Configuration;
+using System.Diagnostics.CodeAnalysis;
 
 namespace BurgerRoyale.Kitchen.Infrastructure.BackgroundMessage;
 
+[ExcludeFromCodeCoverage]
 public class AWSConfiguration(IConfiguration configuration) : ICredentialConfiguration
 {
     public string AccessKey()
