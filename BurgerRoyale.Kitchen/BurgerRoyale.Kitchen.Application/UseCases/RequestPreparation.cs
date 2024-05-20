@@ -18,7 +18,7 @@ public class RequestPreparation(IPreparationRepository repository) : IRequestPre
 
     private static Order CreateOrder(RequestPreparationRequest request)
     {
-        return new Order(request.OrderId, request.Products, request.OrderStatus);
+        return new Order(request.OrderId, request.OrderProducts, Domain.Enums.OrderStatus.Waiting);
     }
 
     private async Task AddOrder(Order order)

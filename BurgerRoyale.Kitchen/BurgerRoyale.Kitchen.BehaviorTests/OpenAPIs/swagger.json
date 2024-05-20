@@ -339,15 +339,16 @@
             "type": "string",
             "format": "uuid"
           },
-          "products": {
+          "orderProducts": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/OrderProduct"
             },
             "nullable": true
           },
-          "orderStatus": {
-            "$ref": "#/components/schemas/OrderStatus"
+          "userId": {
+            "type": "string",
+            "format": "uuid"
           }
         },
         "additionalProperties": false
