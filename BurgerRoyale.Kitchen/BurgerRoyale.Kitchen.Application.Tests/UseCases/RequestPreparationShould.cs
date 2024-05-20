@@ -38,8 +38,8 @@ internal class RequestPreparationShould
         request = new RequestPreparationRequest
         {
             OrderId = Guid.NewGuid(),
-            OrderStatus = OrderStatus.Waiting,
-            Products = prodList,
+            OrderProducts = prodList,
+            UserId = Guid.NewGuid(),
         };
     }
 
@@ -49,10 +49,10 @@ internal class RequestPreparationShould
         #region Arrange(Given)
 
         var orderId = Guid.NewGuid();
+        var userId = Guid.NewGuid();
 
         request.OrderId = orderId;
-        var status = OrderStatus.Waiting;
-        request.OrderStatus = status;
+        request.UserId = userId;
 
         #endregion
 
@@ -74,7 +74,7 @@ internal class RequestPreparationShould
             .Verify(repository => repository.Add(It.Is<Order>(
                 o =>
                     o.Id == orderId &&
-                    o.Status == status)),
+                    o.Status == OrderStatus.Waiting)),
             Times.Once);
 
         #endregion

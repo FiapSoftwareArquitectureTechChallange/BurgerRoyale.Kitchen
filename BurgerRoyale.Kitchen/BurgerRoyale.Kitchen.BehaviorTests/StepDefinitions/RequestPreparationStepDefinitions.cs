@@ -19,8 +19,8 @@ public class RequestPreparationStepDefinitions(ScenarioContext context, KitchenC
 		RequestPreparationRequest request = new RequestPreparationRequest()
 		{
 			OrderId = Guid.NewGuid(),
-			OrderStatus = OrderStatus._0,
-			Products = products
+			UserId = Guid.NewGuid(),
+			OrderProducts = products
 		};
 		context["Order"] = request;
 	}

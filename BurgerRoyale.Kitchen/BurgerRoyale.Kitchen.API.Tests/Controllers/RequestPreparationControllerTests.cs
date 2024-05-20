@@ -27,11 +27,12 @@ public class RequestPreparationControllerTests
     {
         // arrange
         var guid = Guid.NewGuid();
+        var userId = Guid.NewGuid();
         var rpq = new RequestPreparationRequest()
         {
             OrderId = guid,
-            OrderStatus = OrderStatus.Waiting,
-            Products = new List<OrderProduct>(),
+            OrderProducts = new List<OrderProduct>(),
+            UserId = userId,
         };
 
         _requestPreparation
